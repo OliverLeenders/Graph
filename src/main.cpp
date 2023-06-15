@@ -1,5 +1,3 @@
-#include <iostream>
-
 #include "adj_set_graph.h"
 
 int main() {
