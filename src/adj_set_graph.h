@@ -5,8 +5,14 @@
 #include <unordered_map>
 #include <vector>
 
+/**
+ * @brief data structure representing a weighted graph using an adjacency set representation.
+ */
 class adj_set_graph {
   public:
+    /**
+     * @brief Data structure representing a weighted edge
+     */
     struct edge {
         // the id of the edge
         uint32_t id;
@@ -58,7 +64,15 @@ class adj_set_graph {
         node() { this->id = 0U; }
         ~node() {}
     };
+
+    /**
+     * @brief Set of nodes
+     */
     std::unordered_map<uint32_t, node> nodes = std::unordered_map<uint32_t, node>();
+
+    /**
+     * @brief set of edges
+     */
     std::unordered_map<uint32_t, edge> edges = std::unordered_map<uint32_t, edge>();
 
     /**
