@@ -8,6 +8,8 @@ On the other hand, Adjacency Lists do not make things much better as the removal
 
 An Adjacency-Set-based datastructure can provide better modifability, since access times for edges and nodes are always constant. 
 
+## Time Complexity
+
 <table class="tg">
 <thead>
   <tr>
@@ -26,7 +28,7 @@ An Adjacency-Set-based datastructure can provide better modifability, since acce
   </tr>
   <tr>
     <td class="tg-0pky">remove_node</td>
-    <td class="tg-0pky">O(n)</td>
+    <td class="tg-0pky">O(n) [constant for sparse graphs]</td>
   </tr>
   <tr>
     <td class="tg-0lax">remove_edge</td>
@@ -34,3 +36,7 @@ An Adjacency-Set-based datastructure can provide better modifability, since acce
   </tr>
 </tbody>
 </table>
+
+## Implementation
+
+This datastructure is relatively unoptimized for didactic purposes. The aim is to provide a clean, working implementation of an Adjacency-Set graph datastructure in the C++ language. The implementation uses `std::unordered_map` for the set of nodes, the set of edges and each node's neighbour relations.
