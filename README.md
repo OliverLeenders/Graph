@@ -8,10 +8,6 @@ On the other hand, Adjacency Lists do not make things much better as the removal
 
 An Adjacency-Set-based datastructure can provide better modifability, since access times for edges and nodes are always constant. 
 
-<style type="text/css">
-.tg td{border-style:solid;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-</style>
 <table class="tg">
 <thead>
   <tr>
