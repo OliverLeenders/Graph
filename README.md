@@ -9,12 +9,16 @@ On the other hand, Adjacency Lists do not make things much better as the removal
 An Adjacency-Set-based datastructure can provide better modifability, since access times for edges and nodes are always constant. 
 
 ## Time Complexity
-|Method | Time Complexity|
-|-------|----------------|
-|`add_node`|$\mathcal O(1)$|
-|`add_edge`|$\mathcal O(1)$|
-|`remove_node`|$\mathcal O(n)$|
-|`remove_edge`|$\mathcal O(1)$|
+
+| Method        | Time Complexity             |
+|---------------|-----------------------------|
+| `add_node`    | $\mathcal O(1)$             |
+| `add_edge`    | $\mathcal O(1)$             |
+| `remove_node` | $\mathcal O(n)$             |
+| `remove_edge` | $\mathcal O(1)$             |
+| `constructor` | $\mathcal O(\|V\| + \|E\|)$ |
+
+__NOTE:__ For most search tasks (DFS, BFS, Dijkstra's Algorithm) an Adjacency List approach will still be faster, since there is less overhead introduced compared to the set datastructure. The adjacency set approach is merely an alternative with "good" _theoretical_ time complexity properties.
 
 ## Implementation
 
