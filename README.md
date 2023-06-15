@@ -35,6 +35,14 @@ working implementation of an Adjacency-Set graph datastructure in the C++ langua
 implementation uses `std::unordered_map` for the set of nodes, the set of edges and each node's
 neighbour relations.
 
+### Project Structure
+
+The whole graph datastructure is contained in the files `adj_set_graph.h` and `adj_set_graph.cpp`. The file `main.cpp` contains some example code on how to construct such a graph. If you would like to use this datastructure for your project, all you need are the first two mentioned files.
+
+### Future Work
+
+In the future, I might add functionality to read an write to common graph formats, so this program could be used as a converter between formats as well as the functionality to perform different graph algorithms on the graph as a command line tool.
+
 ## License
 
 This project is published under the __GPL v3 license__ included in `license.txt`.
