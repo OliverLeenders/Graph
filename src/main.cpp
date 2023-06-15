@@ -16,12 +16,14 @@ int main() {
     g.add_edge(0, 3, 0.4);
     g.add_edge(3, 2, 0.6);
 
+    std::cout << "Graph has been created as follows: \n" << std::endl;
+
     g.print_graph();
 
     g.remove_node(0);
 
 
-    std::cout << std::endl;
+    std::cout << "\nRemoved Node 0 from the graph.\n" << std::endl;
     g.print_graph();
     return 0;
 }
