@@ -19,7 +19,7 @@ and nodes are always constant.
 |---------------|-----------------------------|
 | `add_node`    | $\mathcal O(1)$             |
 | `add_edge`    | $\mathcal O(1)$             |
-| `remove_node` | $\mathcal O(\deg(v))$             |
+| `remove_node` | $\mathcal O(\deg(v))$       |
 | `remove_edge` | $\mathcal O(1)$             |
 | `constructor` | $\mathcal O(\|V\| + \|E\|)$ |
 
